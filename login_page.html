@@ -12,9 +12,12 @@
     <br><form id="login">
             <legend><h2>Login</h2></legend>
             <label for="usname">Username:</label>&nbsp;
-            <input type="text" id="usname" name="usname" placeholder="Username"><br>
+            <input type="text" id="usname" name="usname" placeholder="Username" required><br>
             <label for="pswrd">Password:</label>&nbsp;&nbsp;
-            <input type="password" id="pswrd" name="pswrd" placeholder="Password">
+            <input type="password" id="pswrd" name="pswrd" placeholder="Password" role=""><br>
+            <input type="button" value="Submit" onclick="alert('Want to Submit')">
+            <input type="reset" value="Reset">
     </form>
+    <footer><a href="">Need Help?</a></footer>
 </body>
 </html>

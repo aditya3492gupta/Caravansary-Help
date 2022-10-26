@@ -7,9 +7,12 @@ body{
     border-color: aliceblue;
     border-style: solid;
     border-radius: 3px;
-    margin: auto 580px;
+    margin: auto 600px;
 }
 #login{
     text-align: center;
     border-radius: 14px;
+}
+footer{
+    text-align: center;
 }
