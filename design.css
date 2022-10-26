@@ -1,6 +1,15 @@
 body{
     background-color: burlywood;
 }
-img{
-    width="150" height="150";
+#logo{
+    width: 150px; height:150px;
+    align-content: center;
+    border-color: aliceblue;
+    border-style: solid;
+    border-radius: 3px;
+    margin: auto 580px;
+}
+#login{
+    text-align: center;
+    border-radius: 14px;
 }
