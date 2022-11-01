@@ -16,3 +16,17 @@ body{
 footer{
     text-align: center;
 }
+#usname,#pswrd
+{
+    border-radius: 4px;
+    transition: .14s;
+    background-color:rgb(231, 75, 13);
+    color: black;
+    border-color: black;
+}
+::placeholder{
+    color: aliceblue;
+}
+#usname:hover,#pswrd:hover{
+    width:200px;
+}
