@@ -30,3 +30,7 @@ footer{
 #usname:hover,#pswrd:hover{
     width:200px;
 }
+.btn:hover{
+    color: aqua;
+    background-color: black;
+}
