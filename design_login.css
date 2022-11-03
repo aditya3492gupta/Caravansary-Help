@@ -1,12 +1,16 @@
 body{
     background-color: burlywood;
 }
+*{
+    margin: 0;
+    padding: 0;
+}
 #logo{
     width: 150px; height:150px;
     align-content: center;
     border-color: aliceblue;
     border-style: solid;
-    border-radius: 3px;
+    border-radius: 50%;
     margin: auto 600px;
 }
 #login{
