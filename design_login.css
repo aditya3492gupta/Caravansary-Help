@@ -10,7 +10,7 @@ body{
     align-content: center;
     border-color: aliceblue;
     border-style: solid;
-    border-radius: 3px;
+    border-radius: 50%;
     margin: auto 600px;
 }
 #login{
