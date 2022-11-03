@@ -44,3 +44,7 @@ login-form h1 {
             width: 50%;
             border-radius:5px
             }
+.btn:hover{
+                color: aqua;
+                background-color: black;
+            }
