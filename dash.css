@@ -2,3 +2,21 @@
   border: 0px;
   border-radius: 20px;
 }
+.btn{
+  display: inline;
+  text-decoration: none;
+}
+.btn:hover{
+  color: aqua;
+  background-color: black;
+  text-decoration: none;
+}
+.btn:active{
+  text-decoration: none;
+}
+.btn:visited{
+  text-decoration: none;
+}
+.btn:link{
+  text-decoration: none;
+}
