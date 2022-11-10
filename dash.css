@@ -21,4 +21,8 @@
   font-size: 10%;
   padding-left: 20px;
   width: 200px;
+  background-color: cadetblue;
+}
+.row{
+  width: 30%;
 }
