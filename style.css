@@ -49,3 +49,7 @@ login-form h1 {
         background-color: black;
         cursor: pointer;
         }
+.help{
+        color: #fff;
+        text-decoration: none;
+}

@@ -6,6 +6,12 @@
   display: inline;
   text-decoration: none;
 }
+.btn:active{
+  color: aqua;
+}
+.btn:visited{
+  color: crimson;
+}
 .btn:hover{
   color: aqua;
   background-color: black;
