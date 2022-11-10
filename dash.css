@@ -17,21 +17,95 @@
   background-color: black;
   text-decoration: none;
 }
-.list-group-item{
-  font-size: 10%;
-  padding-left: 20px;
-  width: 200px;
-  background-color: cadetblue;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200; 300; 400; 500; 608; 708; 800; 900& display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
-.row{
-  height: 100%;
-  width: 50%;
-  position: fixed;
+
+body {
+    min-height: 100vh;
+    background: rgb(252, 251, 251);
 }
+
+.navigation {
+    position: fixed;
+    top: 8%;
+    Left: 20px;
+    bottom: 20px;
+    width: 250px;
+    border-radius: 10px;
+    box-sizing: initial;
+    border-Left: 5px solid #4d5bf9;
+    background: #4d5bf9;
+    transition: 0.5s;
+}
+
+.navigation ul {
+    position: absolute;
+    top: 0;
+    Left: 0;
+    width: 100%;
+    padding-left: 15px;
+    padding-top: 40px;
+}
+
+.navigation ul li {
+    position: relative;
+    List-style: none;
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.navigation ul li.active {
+    background: #fff;
+}
+
+.navigation ul li a {
+    position: relative;
+    display: block;
+    width: 100%;
+    display: flex;
+    text-decoration: none;
+    Line-height: 60px;
+    color: #fff;
+}
+
+.navigation ul li.active a {
+    color: rgb(9, 2, 2);
+}
+
+.navigation ul li a .icon {
+    position: relative;
+    display: block;
+    min-width: 60px;
+    height: 60px;
+    Line-height: 64px;
+    text-align: center;
+}
+
+.navigation ul li a .icon icon-icon {
+    font-size: 1.5em;
+}
+
+.navigation ul li a.title {
+    position: relative;
+    display: block;
+    padding-left: 10px;
+    height: 60px;
+    Line-height: 60px;
+    white-space: normal;
+}
+
+
 .heading{
   position: absolute;
   top: 28%;
-  left: 25%;
+  left: 30%;
   transform: translate(-50%, -50%);
   background-color: aqua;
 }
