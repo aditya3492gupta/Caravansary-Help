@@ -30,9 +30,10 @@
 }
 .heading{
   position: absolute;
-  top: 25%;
+  top: 28%;
   left: 25%;
   transform: translate(-50%, -50%);
+  background-color: aqua;
 }
 .dash{
   font-size: xx-large;
@@ -43,7 +44,7 @@
   top: 40%;
   left: 25%;
 }
-a pro{
-  font: 25px;
+.heading a{
   text-align: center;
+  text-decoration: none;
 }
