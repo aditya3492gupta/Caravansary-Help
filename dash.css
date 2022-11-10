@@ -30,10 +30,20 @@
 }
 .heading{
   position: absolute;
-  top: 12%;
+  top: 25%;
   left: 25%;
   transform: translate(-50%, -50%);
 }
 .dash{
   font-size: xx-large;
+}
+.user{
+  width: 160px;
+  height: 160px;
+  top: 40%;
+  left: 25%;
+}
+a pro{
+  font: 25px;
+  text-align: center;
 }
