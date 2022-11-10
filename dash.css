@@ -24,5 +24,16 @@
   background-color: cadetblue;
 }
 .row{
-  width: 30%;
+  height: 100%;
+  width: 50%;
+  position: fixed;
+}
+.heading{
+  position: absolute;
+  top: 12%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+}
+.dash{
+  font-size: xx-large;
 }
