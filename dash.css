@@ -1,7 +1,3 @@
-.d-inline-block{
-  border: 0px;
-  border-radius: 20px;
-}
 .btn{
   display: inline;
   text-decoration: none;
@@ -17,6 +13,133 @@
   background-color: black;
   text-decoration: none;
 }
+* {
+  font-family: "Audiowide", sans-serif;
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: rgb(252, 251, 251);
+}
+
+.navigation1 {
+  position: relative;
+  width: 400px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: chartreuse;
+  border-radius: 10px;
+}
+
+.navigation1 ul {
+  display: flex;
+  width: 350px;
+}
+
+.navigation1 ul li {
+  position: relative;
+  list-style: none;
+  width: 70px;
+  height: 70px;
+  z-index: 1;
+}
+
+.navigation1 ul li a {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+  font-weight: 500;
+}
+
+.navigation1 ul li a .icon1 {
+  position: relative;
+  display: block;
+  line-height: 75px;
+  font-size: 1.5em;
+  text-align: center;
+  transition: 0.5s;
+}
+
+.navigation1 ul li.active a .icon1 {
+  transform: translateY(-32px);
+}
+
+.navigation1 ul li a .text1 {
+  position: absolute;
+  font-weight: 400;
+  font-size: 0.75em;
+  letter-spacing: 0.5em;
+  transition: 0.5s;
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.navigation1 ul li.active a .text1 {
+  opacity: 1;
+}
+
+.indicator {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  background-color: aliceblue;
+  top: -50%;
+  border-radius: 50%;
+  border-color: white;
+  transition: 0.5s;
+}
+
+.indicactor::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: -22px;
+  width: 20px;
+  height: 20px;
+  background: transparent;
+  border-top-right-radius: 20px;
+  box-shadow: 1px -10px 0 0;
+}
+
+.indicactor::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: -22px;
+  width: 20px;
+  height: 20px;
+  background: transparent;
+  border-top-left-radius: 20px;
+  box-shadow: -1px -10px 0 0;
+}
+
+.navigation1 ul li:nth-child(1).active~.indicator {
+  transform: translateX(calc(70px * 0));
+}
+.navigation1 ul li:nth-child(2).active~.indicator {
+  transform: translateX(calc(70px * 1));
+}
+.navigation1 ul li:nth-child(3).active~.indicator {
+  transform: translateX(calc(70px * 2));
+}
+.navigation1 ul li:nth-child(4).active~.indicator {
+  transform: translateX(calc(70px * 3));
+}
+.navigation1 ul li:nth-child(5).active~.indicator {
+  transform: translateX(calc(70px * 4));
+}
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200; 300; 400; 500; 608; 708; 800; 900& display=swap');
 
 * {
@@ -26,10 +149,6 @@
     font-family: 'Poppins', sans-serif;
 }
 
-body {
-    min-height: 100vh;
-    background: rgb(252, 251, 251);
-}
 
 .navigation {
     position: fixed;
