@@ -229,7 +229,7 @@ body {
 .user {
   width: 160px;
   height: 160px;
-  top: 50%;
+  top: 100%;
   left: 30%;
   background-color: aqua;
 }
