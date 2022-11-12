@@ -1,8 +1,8 @@
-const list= document.querySelectorAll('.list');
+const list1= document.querySelectorAll('.list1');
 function activeLink(){
-    list.forEach((item) =>
+    list1.forEach((item) =>
     item.classList.remove('active'));
     this.classList.add('active');
 }
-list.forEach((item)=>
+list1.forEach((item)=>
 item.addEventListener('click',activeLink));

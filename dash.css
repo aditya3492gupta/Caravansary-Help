@@ -1,3 +1,10 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "'Poppins',sans-serif";
+}
+
 .btn{
   display: inline;
   text-decoration: none;
@@ -13,39 +20,36 @@
   background-color: black;
   text-decoration: none;
 }
-* {
-  font-family: "Audiowide", sans-serif;
-  margin: 0%;
-  padding: 0%;
-  box-sizing: border-box;
-}
 
 body {
   display: flex;
-  justify-content: center;
-  align-items: center;
   min-height: 100vh;
   background: rgb(252, 251, 251);
 }
 
 .navigation1 {
   position: relative;
+  justify-content: center;
+  align-items: center;
   width: 400px;
   height: 70px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   background-color: chartreuse;
   border-radius: 10px;
+  top: 5%;
+  left: 5%;
+  
 }
 
 .navigation1 ul {
   display: flex;
   width: 350px;
+  
 }
 
 .navigation1 ul li {
   position: relative;
+  justify-content: center;
+  align-items: center;
   list-style: none;
   width: 70px;
   height: 70px;
@@ -65,6 +69,8 @@ body {
 
 .navigation1 ul li a .icon1 {
   position: relative;
+  justify-content: center;
+  align-items: center;
   display: block;
   line-height: 75px;
   font-size: 1.5em;
@@ -74,6 +80,8 @@ body {
 
 .navigation1 ul li.active a .icon1 {
   transform: translateY(-32px);
+  justify-content: center;
+  align-items: center;
 }
 
 .navigation1 ul li a .text1 {
@@ -125,34 +133,28 @@ body {
   box-shadow: -1px -10px 0 0;
 }
 
-.navigation1 ul li:nth-child(1).active~.indicator {
-  transform: translateX(calc(70px * 0));
+.navigation1 ul li:nth-child(1).active:hover ~ .indicator {
+  transform: translateX(calc(60px * 0));
 }
-.navigation1 ul li:nth-child(2).active~.indicator {
-  transform: translateX(calc(70px * 1));
+.navigation1 ul li:nth-child(2).active:hover ~ .indicator {
+  transform: translateX(calc(60px * 1));
 }
-.navigation1 ul li:nth-child(3).active~.indicator {
-  transform: translateX(calc(70px * 2));
+.navigation1 ul li:nth-child(3).active:hover ~ .indicator {
+  transform: translateX(calc(63px * 2));
 }
-.navigation1 ul li:nth-child(4).active~.indicator {
-  transform: translateX(calc(70px * 3));
+.navigation1 ul li:nth-child(4).active:hover ~ .indicator {
+  transform: translateX(calc(62px * 3));
 }
-.navigation1 ul li:nth-child(5).active~.indicator {
-  transform: translateX(calc(70px * 4));
+.navigation1 ul li:nth-child(5).active:hover ~ .indicator {
+  transform: translateX(calc(63px * 4));
 }
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200; 300; 400; 500; 608; 708; 800; 900& display=swap');
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-}
 
 
 .navigation {
     position: fixed;
-    top: 8%;
+    top: 20%;
     Left: 20px;
     bottom: 20px;
     width: 250px;
