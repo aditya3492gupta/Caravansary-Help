@@ -5,17 +5,20 @@
   font-family: "'Poppins',sans-serif";
 }
 
-.btn{
+.btn {
   display: inline;
   text-decoration: none;
 }
-.btn:active{
+
+.btn:active {
   color: aqua;
 }
-.btn:visited{
+
+.btn:visited {
   color: crimson;
 }
-.btn:hover{
+
+.btn:hover {
   color: aqua;
   background-color: black;
   text-decoration: none;
@@ -37,13 +40,13 @@ body {
   border-radius: 10px;
   top: 5%;
   left: 5%;
-  
+
 }
 
 .navigation1 ul {
   display: flex;
   width: 450px;
-  
+
 }
 
 .navigation1 ul li {
@@ -64,7 +67,7 @@ body {
   flex-direction: column;
   width: 90%;
   text-align: center;
-  
+
 }
 
 .navigation1 ul li a .icon1 {
@@ -128,116 +131,194 @@ body {
   box-shadow: -1px -10px 0 0;
 }
 
-.navigation1 ul li:nth-child(1).active:hover ~ .indicator {
+.navigation1 ul li:nth-child(1).active:hover~.indicator {
   transform: translateX(calc(60px * 0));
 }
-.navigation1 ul li:nth-child(2).active:hover ~ .indicator {
+
+.navigation1 ul li:nth-child(2).active:hover~.indicator {
   transform: translateX(calc(64px * 1));
 }
-.navigation1 ul li:nth-child(3).active:hover ~ .indicator {
+
+.navigation1 ul li:nth-child(3).active:hover~.indicator {
   transform: translateX(calc(67px * 2));
 }
-.navigation1 ul li:nth-child(4).active:hover ~ .indicator {
+
+.navigation1 ul li:nth-child(4).active:hover~.indicator {
   transform: translateX(calc(68px * 3));
 }
-.navigation1 ul li:nth-child(5).active:hover ~ .indicator {
+
+.navigation1 ul li:nth-child(5).active:hover~.indicator {
   transform: translateX(calc(68px * 4));
 }
-.navigation1 ul li:nth-child(6).active:hover ~ .indicator {
+
+.navigation1 ul li:nth-child(6).active:hover~.indicator {
   transform: translateX(calc(69px * 5));
 }
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200; 300; 400; 500; 608; 708; 800; 900& display=swap');
 
 
 
 .navigation {
-    position: fixed;
-    top: 20%;
-    Left: 20px;
-    bottom: 20px;
-    width: 250px;
-    border-radius: 10px;
-    box-sizing: initial;
-    border-Left: 5px solid #4d5bf9;
-    background: #4d5bf9;
-    transition: 0.5s;
+  position: fixed;
+  top: 20%;
+  Left: 20px;
+  bottom: 20px;
+  width: 250px;
+  border-radius: 10px;
+  box-sizing: initial;
+  border-Left: 5px solid #4d5bf9;
+  background: #4d5bf9;
+  transition: 0.5s;
 }
 
 .navigation ul {
-    position: absolute;
-    top: 0;
-    Left: 0;
-    width: 100%;
-    padding-left: 15px;
-    padding-top: 40px;
+  position: absolute;
+  top: 0;
+  Left: 0;
+  width: 100%;
+  padding-left: 15px;
+  padding-top: 40px;
 }
 
 .navigation ul li {
-    position: relative;
-    List-style: none;
-    width: 100%;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
+  position: relative;
+  List-style: none;
+  width: 100%;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  z-index: 1;
 }
 
 .navigation ul li.active {
-    background: #fff;
+  background: #fff;
 }
 
 .navigation ul li a {
-    position: relative;
-    display: block;
-    width: 100%;
-    display: flex;
-    text-decoration: none;
-    Line-height: 60px;
-    color: #fff;
+  position: relative;
+  display: block;
+  width: 100%;
+  display: flex;
+  text-decoration: none;
+  Line-height: 60px;
+  color: #fff;
 }
 
 .navigation ul li.active a {
-    color: rgb(9, 2, 2);
+  color: rgb(9, 2, 2);
 }
 
 .navigation ul li a .icon {
-    position: relative;
-    display: block;
-    min-width: 60px;
-    height: 60px;
-    Line-height: 64px;
-    text-align: center;
+  position: relative;
+  display: block;
+  min-width: 60px;
+  height: 60px;
+  Line-height: 64px;
+  text-align: center;
 }
 
 .navigation ul li a .icon icon-icon {
-    font-size: 1.5em;
+  font-size: 1.5em;
 }
 
 .navigation ul li a.title {
-    position: relative;
-    display: block;
-    padding-left: 10px;
-    height: 60px;
-    Line-height: 60px;
-    white-space: normal;
+  position: relative;
+  display: none;
+  padding-left: 10px;
+  height: 60px;
+  Line-height: 60px;
+  white-space: normal;
 }
 
 
-.heading{
+.heading {
   position: absolute;
   top: 35%;
   left: 35%;
   transform: translate(-50%, -50%);
 }
-.dash{
+
+.dash {
   font-size: xx-large;
 }
-.user{
+
+.user {
   width: 160px;
   height: 160px;
   top: 50%;
   left: 30%;
   background-color: aqua;
 }
-.heading a{
+
+.heading a {
   text-align: center;
   text-decoration: none;
+}
+
+.navigation ul li a .text {
+  position: absolute;
+  font-size: 0.75em;
+  transition: 0.5s;
+  opacity: 0;
+  transform: translateY(22px);
+}
+.navigation1 ul li.active a .text1 {
+  opacity: 1;
+}
+.indicator1 {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  background-color: aliceblue;
+  top: -50%;
+  border-radius: 20%;
+  border-color: white;
+  transition: 0.5s;
+}
+
+.indicactor1::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: -22px;
+  width: 20px;
+  height: 20px;
+  background: transparent;
+  border-top-right-radius: 20px;
+  box-shadow: 1px -10px 0 0;
+}
+
+.indicactor1::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: -22px;
+  width: 20px;
+  height: 20px;
+  background: transparent;
+  border-top-left-radius: 20px;
+  box-shadow: -1px -10px 0 0;
+}
+.navigation ul li:nth-child(1).active:hover~.indicator1 {
+  transform: translateX(calc(60px * 0));
+}
+
+.navigation ul li:nth-child(2).active:hover~.indicator1 {
+  transform: translateX(calc(64px * 1));
+}
+
+.navigation ul li:nth-child(3).active:hover~.indicator1 {
+  transform: translateX(calc(67px * 2));
+}
+
+.navigation ul li:nth-child(4).active:hover~.indicator1 {
+  transform: translateX(calc(68px * 3));
+}
+
+.navigation ul li:nth-child(5).active:hover~.indicator1 {
+  transform: translateX(calc(68px * 4));
+}
+
+.navigation ul li:nth-child(6).active:hover~.indicator1 {
+  transform: translateX(calc(69px * 5));
 }
