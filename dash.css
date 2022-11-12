@@ -31,9 +31,9 @@ body {
   position: relative;
   justify-content: center;
   align-items: center;
-  width: 400px;
+  width: 1240px;
   height: 70px;
-  background-color: chartreuse;
+  background-color: rgb(230, 233, 44);
   border-radius: 10px;
   top: 5%;
   left: 5%;
@@ -42,7 +42,7 @@ body {
 
 .navigation1 ul {
   display: flex;
-  width: 350px;
+  width: 450px;
   
 }
 
@@ -53,7 +53,7 @@ body {
   list-style: none;
   width: 70px;
   height: 70px;
-  z-index: 1;
+  z-index: 2;
 }
 
 .navigation1 ul li a {
@@ -62,15 +62,13 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  width: 100%;
+  width: 90%;
   text-align: center;
-  font-weight: 500;
+  
 }
 
 .navigation1 ul li a .icon1 {
   position: relative;
-  justify-content: center;
-  align-items: center;
   display: block;
   line-height: 75px;
   font-size: 1.5em;
@@ -80,15 +78,12 @@ body {
 
 .navigation1 ul li.active a .icon1 {
   transform: translateY(-32px);
-  justify-content: center;
-  align-items: center;
 }
 
 .navigation1 ul li a .text1 {
   position: absolute;
-  font-weight: 400;
+
   font-size: 0.75em;
-  letter-spacing: 0.5em;
   transition: 0.5s;
   opacity: 0;
   transform: translateY(20px);
@@ -137,16 +132,19 @@ body {
   transform: translateX(calc(60px * 0));
 }
 .navigation1 ul li:nth-child(2).active:hover ~ .indicator {
-  transform: translateX(calc(60px * 1));
+  transform: translateX(calc(64px * 1));
 }
 .navigation1 ul li:nth-child(3).active:hover ~ .indicator {
-  transform: translateX(calc(63px * 2));
+  transform: translateX(calc(67px * 2));
 }
 .navigation1 ul li:nth-child(4).active:hover ~ .indicator {
-  transform: translateX(calc(62px * 3));
+  transform: translateX(calc(68px * 3));
 }
 .navigation1 ul li:nth-child(5).active:hover ~ .indicator {
-  transform: translateX(calc(63px * 4));
+  transform: translateX(calc(68px * 4));
+}
+.navigation1 ul li:nth-child(6).active:hover ~ .indicator {
+  transform: translateX(calc(69px * 5));
 }
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200; 300; 400; 500; 608; 708; 800; 900& display=swap');
 
@@ -225,10 +223,9 @@ body {
 
 .heading{
   position: absolute;
-  top: 28%;
-  left: 30%;
+  top: 35%;
+  left: 35%;
   transform: translate(-50%, -50%);
-  background-color: aqua;
 }
 .dash{
   font-size: xx-large;
@@ -236,8 +233,9 @@ body {
 .user{
   width: 160px;
   height: 160px;
-  top: 40%;
-  left: 25%;
+  top: 50%;
+  left: 30%;
+  background-color: aqua;
 }
 .heading a{
   text-align: center;
