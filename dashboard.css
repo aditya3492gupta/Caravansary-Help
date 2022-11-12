@@ -217,7 +217,7 @@ body {
 
 .heading {
   position: absolute;
-  top: 35%;
+  top: 50%;
   left: 35%;
   transform: translate(-50%, -50%);
 }
@@ -305,4 +305,9 @@ body {
 
 .navigation ul li:nth-child(6).active:hover~.indicator1 {
   transform: translateX(calc(69px * 5));
+}
+#canvas{
+  width: 160px;
+  height: 160px;
+  top: 100%;
 }
