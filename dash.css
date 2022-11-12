@@ -5,24 +5,6 @@
   font-family: "'Poppins',sans-serif";
 }
 
-.btn {
-  display: inline;
-  text-decoration: none;
-}
-
-.btn:active {
-  color: aqua;
-}
-
-.btn:visited {
-  color: crimson;
-}
-
-.btn:hover {
-  color: aqua;
-  background-color: black;
-  text-decoration: none;
-}
 
 body {
   display: flex;
@@ -31,7 +13,7 @@ body {
 }
 
 .navigation1 {
-  position: relative;
+  position: fixed;
   justify-content: center;
   align-items: center;
   width: 1240px;
@@ -40,23 +22,22 @@ body {
   border-radius: 10px;
   top: 5%;
   left: 5%;
-
+  transition: 0;
 }
 
 .navigation1 ul {
   display: flex;
-  width: 450px;
+  width: 550px;
 
 }
 
 .navigation1 ul li {
   position: relative;
-  justify-content: center;
-  align-items: center;
+  
   list-style: none;
   width: 70px;
   height: 70px;
-  z-index: 2;
+  z-index: 1;
 }
 
 .navigation1 ul li a {
@@ -65,7 +46,7 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  width: 90%;
+  width: 100%;
   text-align: center;
 
 }
@@ -104,7 +85,7 @@ body {
   top: -50%;
   border-radius: 50%;
   border-color: white;
-  transition: 0.5s;
+  transition: 0s;
 }
 
 .indicactor::before {
@@ -155,6 +136,9 @@ body {
   transform: translateX(calc(69px * 5));
 }
 
+.navigation1 ul li:nth-child(7).active:hover~.indicator {
+  transform: translateX(calc(69px * 6));
+}
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200; 300; 400; 500; 608; 708; 800; 900& display=swap');
 
 
