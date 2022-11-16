@@ -12,12 +12,25 @@
     <div>
         <form action="post">
             <label for="day">Day</label>
-            <input type="text" name="day" id="day"><br>
-            <label for="date">Date</label>
-            <input type="text" name="date" id="date"><br>
+            <select id="day" name="day" aria-placeholder="select day">
+                <option value="monday">Monday</option>
+                <option value="tuesday">Tuesday</option>
+                <option value="wednesday">Wednesday</option>
+                <option value="thursday">Thursady</option>
+                <option value="friday">Friday</option>
+                <option value="saturday">Saturday</option>
+                <option value="sunday">Sunday</option>
+              </select><br>
+              <label for="date">Date</label>
+            <input type="date" name="date" id="date"><br>
             <label for="time">Time</label>
-            <input type="text" name="time" id="time"><br>
-            <label for="reason">Reason</label>
+              <select name="time" id="time">
+                <option value="breakfast">Breakfast</option>
+                <option value="lunch">Lunch</option>
+                <option value="snacks">Snacks</option>
+                <option value="dinner">Dinner</option>
+              </select><br>
+            <label for="reason" class="rreason">Reason</label>
             <textarea name="reason" id="reason" cols="130" rows="2"></textarea><br>
             <input type="submit">
         </form>
