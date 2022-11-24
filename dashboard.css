@@ -16,24 +16,26 @@ body {
   position: fixed;
   justify-content: center;
   align-items: center;
-  width: 1240px;
+  width: 1040px;
   height: 70px;
-  background-color: rgb(230, 233, 44);
+  color: #fff;
+  border-Left: 5px solid #4d5bf9;
+  background: #4d5bf9;
   border-radius: 10px;
   top: 5%;
-  left: 5%;
-  transition: 0;
+  left: 22%;
+  transition: 0.5s;
 }
 
 .navigation1 ul {
   display: flex;
   width: 550px;
-
+  color: #fff;
 }
 
 .navigation1 ul li {
   position: relative;
-  
+  color: #fff;
   list-style: none;
   width: 70px;
   height: 70px;
@@ -48,8 +50,7 @@ body {
   flex-direction: column;
   width: 100%;
   text-align: center;
-
-}
+  }
 
 .navigation1 ul li a .icon1 {
   position: relative;
@@ -58,6 +59,7 @@ body {
   font-size: 1.5em;
   text-align: center;
   transition: 0.5s;
+  color: #fff;
 }
 
 .navigation1 ul li.active a .icon1 {
@@ -66,7 +68,7 @@ body {
 
 .navigation1 ul li a .text1 {
   position: absolute;
-
+  color: #fff;
   font-size: 0.75em;
   transition: 0.5s;
   opacity: 0;
@@ -81,35 +83,11 @@ body {
   position: absolute;
   width: 70px;
   height: 70px;
-  background-color: aliceblue;
+  background-color: #4d5bf9;
   top: -50%;
   border-radius: 50%;
   border-color: white;
   transition: 0s;
-}
-
-.indicactor::before {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: -22px;
-  width: 20px;
-  height: 20px;
-  background: transparent;
-  border-top-right-radius: 20px;
-  box-shadow: 1px -10px 0 0;
-}
-
-.indicactor::after {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: -22px;
-  width: 20px;
-  height: 20px;
-  background: transparent;
-  border-top-left-radius: 20px;
-  box-shadow: -1px -10px 0 0;
 }
 
 .navigation1 ul li:nth-child(1).active:hover~.indicator {
@@ -145,7 +123,7 @@ body {
 
 .navigation {
   position: fixed;
-  top: 20%;
+  top: 5%;
   Left: 20px;
   bottom: 20px;
   width: 250px;
@@ -258,30 +236,6 @@ body {
   border-radius: 20%;
   border-color: white;
   transition: 0.5s;
-}
-
-.indicactor1::before {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: -22px;
-  width: 20px;
-  height: 20px;
-  background: transparent;
-  border-top-right-radius: 20px;
-  box-shadow: 1px -10px 0 0;
-}
-
-.indicactor1::after {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: -22px;
-  width: 20px;
-  height: 20px;
-  background: transparent;
-  border-top-left-radius: 20px;
-  box-shadow: -1px -10px 0 0;
 }
 .navigation ul li:nth-child(1).active:hover~.indicator1 {
   transform: translateX(calc(60px * 0));
