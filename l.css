@@ -1,0 +1,61 @@
+table, th, td {
+    border: 2px solid;
+    border-color:black ;
+    border-collapse: collapse;
+    padding: 2px;
+    text-align:justify;
+    margin-left: 50px;
+    margin-top: 100px;
+    width: 25%;
+    
+
+  }
+  h1{
+    font-family:'Times New Roman', Times, serif;
+    margin-top: 30px;
+    margin-left:20px;
+    text-shadow: 8px 8px 8px  rgb(11, 38, 246);
+    font-size:50px;
+     
+  }
+  td {
+    height: 30%;
+}
+
+html {  
+    background: url("5.jpg") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+  }
+  img{
+    opacity:0.5 ;
+  }
+  input {
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: groove;
+    background: transparent;
+    width:140px;
+  } 
+  .table td {
+    position: sticky;
+    top: 0;
+  }
+  .table th,
+.table td {
+  padding: 0.2rem 0.5rem;
+  text-align: center;
+}
+
+table { 
+  box-shadow: 16px 16px 16px rgb(11, 38, 246); 
+}
+#submit{
+ 
+  margin-left:280px ;
+  background-color: rgba(15, 130, 179, 0.929);
+}
