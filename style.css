@@ -51,5 +51,11 @@ login-form h1 {
         }
 .help{
         color: #fff;
-        text-decoration: none;
+        text-decoration: none;  
+.card {
+                /* other styles */
+                background: rgba(255, 255, 255, .7);
+                -webkit-backdrop-filter: blur(10px);
+                backdrop-filter: blur(10px);
+        }
 }
