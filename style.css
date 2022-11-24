@@ -51,5 +51,20 @@ login-form h1 {
         }
 .help{
         color: #fff;
+<<<<<<< HEAD
+        text-decoration: none;  
+.card {
+                /* other styles */
+                background: rgba(255, 255, 255, .7);
+                -webkit-backdrop-filter: blur(10px);
+                backdrop-filter: blur(10px);
+        }
+=======
         text-decoration: none;
+}
+.check{
+        color: #fff;
+        margin: 20px 0;
+        text-align: center;
+>>>>>>> 7703d1dbe0f441f41d9c00679a73d13860c8eb4e
 }

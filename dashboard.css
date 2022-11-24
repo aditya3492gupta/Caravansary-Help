@@ -1,0 +1,313 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "'Poppins',sans-serif";
+}
+
+
+body {
+  display: flex;
+  min-height: 100vh;
+  background: rgb(252, 251, 251);
+}
+
+.navigation1 {
+  position: fixed;
+  justify-content: center;
+  align-items: center;
+  width: 1240px;
+  height: 70px;
+  background-color: rgb(230, 233, 44);
+  border-radius: 10px;
+  top: 5%;
+  left: 5%;
+  transition: 0;
+}
+
+.navigation1 ul {
+  display: flex;
+  width: 550px;
+
+}
+
+.navigation1 ul li {
+  position: relative;
+  
+  list-style: none;
+  width: 70px;
+  height: 70px;
+  z-index: 1;
+}
+
+.navigation1 ul li a {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+
+}
+
+.navigation1 ul li a .icon1 {
+  position: relative;
+  display: block;
+  line-height: 75px;
+  font-size: 1.5em;
+  text-align: center;
+  transition: 0.5s;
+}
+
+.navigation1 ul li.active a .icon1 {
+  transform: translateY(-32px);
+}
+
+.navigation1 ul li a .text1 {
+  position: absolute;
+
+  font-size: 0.75em;
+  transition: 0.5s;
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.navigation1 ul li.active a .text1 {
+  opacity: 1;
+}
+
+.indicator {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  background-color: aliceblue;
+  top: -50%;
+  border-radius: 50%;
+  border-color: white;
+  transition: 0s;
+}
+
+.indicactor::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: -22px;
+  width: 20px;
+  height: 20px;
+  background: transparent;
+  border-top-right-radius: 20px;
+  box-shadow: 1px -10px 0 0;
+}
+
+.indicactor::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: -22px;
+  width: 20px;
+  height: 20px;
+  background: transparent;
+  border-top-left-radius: 20px;
+  box-shadow: -1px -10px 0 0;
+}
+
+.navigation1 ul li:nth-child(1).active:hover~.indicator {
+  transform: translateX(calc(60px * 0));
+}
+
+.navigation1 ul li:nth-child(2).active:hover~.indicator {
+  transform: translateX(calc(64px * 1));
+}
+
+.navigation1 ul li:nth-child(3).active:hover~.indicator {
+  transform: translateX(calc(67px * 2));
+}
+
+.navigation1 ul li:nth-child(4).active:hover~.indicator {
+  transform: translateX(calc(68px * 3));
+}
+
+.navigation1 ul li:nth-child(5).active:hover~.indicator {
+  transform: translateX(calc(68px * 4));
+}
+
+.navigation1 ul li:nth-child(6).active:hover~.indicator {
+  transform: translateX(calc(69px * 5));
+}
+
+.navigation1 ul li:nth-child(7).active:hover~.indicator {
+  transform: translateX(calc(69px * 6));
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200; 300; 400; 500; 608; 708; 800; 900& display=swap');
+
+
+
+.navigation {
+  position: fixed;
+  top: 20%;
+  Left: 20px;
+  bottom: 20px;
+  width: 250px;
+  border-radius: 10px;
+  box-sizing: initial;
+  border-Left: 5px solid #4d5bf9;
+  background: #4d5bf9;
+  transition: 0.5s;
+}
+
+.navigation ul {
+  position: absolute;
+  top: 0;
+  Left: 0;
+  width: 100%;
+  padding-left: 15px;
+  padding-top: 40px;
+}
+
+.navigation ul li {
+  position: relative;
+  List-style: none;
+  width: 100%;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  z-index: 1;
+}
+
+.navigation ul li.active {
+  background: #fff;
+}
+
+.navigation ul li a {
+  position: relative;
+  display: block;
+  width: 100%;
+  display: flex;
+  text-decoration: none;
+  Line-height: 60px;
+  color: #fff;
+}
+
+.navigation ul li.active a {
+  color: rgb(9, 2, 2);
+}
+
+.navigation ul li a .icon {
+  position: relative;
+  display: block;
+  min-width: 60px;
+  height: 60px;
+  Line-height: 64px;
+  text-align: center;
+}
+
+.navigation ul li a .icon icon-icon {
+  font-size: 1.5em;
+}
+
+.navigation ul li a.title {
+  position: relative;
+  display: none;
+  padding-left: 10px;
+  height: 60px;
+  Line-height: 60px;
+  white-space: normal;
+}
+
+
+.heading {
+  position: absolute;
+  top: 50%;
+  left: 35%;
+  transform: translate(-50%, -50%);
+}
+
+.dash {
+  font-size: xx-large;
+}
+
+.user {
+  width: 160px;
+  height: 160px;
+  top: 100%;
+  left: 30%;
+  background-color: aqua;
+}
+
+.heading a {
+  text-align: center;
+  text-decoration: none;
+}
+
+.navigation ul li a .text {
+  position: absolute;
+  font-size: 0.75em;
+  transition: 0.5s;
+  opacity: 0;
+  transform: translateY(22px);
+}
+.navigation1 ul li.active a .text1 {
+  opacity: 1;
+}
+.indicator1 {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  background-color: aliceblue;
+  top: -50%;
+  border-radius: 20%;
+  border-color: white;
+  transition: 0.5s;
+}
+
+.indicactor1::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: -22px;
+  width: 20px;
+  height: 20px;
+  background: transparent;
+  border-top-right-radius: 20px;
+  box-shadow: 1px -10px 0 0;
+}
+
+.indicactor1::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: -22px;
+  width: 20px;
+  height: 20px;
+  background: transparent;
+  border-top-left-radius: 20px;
+  box-shadow: -1px -10px 0 0;
+}
+.navigation ul li:nth-child(1).active:hover~.indicator1 {
+  transform: translateX(calc(60px * 0));
+}
+
+.navigation ul li:nth-child(2).active:hover~.indicator1 {
+  transform: translateX(calc(64px * 1));
+}
+
+.navigation ul li:nth-child(3).active:hover~.indicator1 {
+  transform: translateX(calc(67px * 2));
+}
+
+.navigation ul li:nth-child(4).active:hover~.indicator1 {
+  transform: translateX(calc(68px * 3));
+}
+
+.navigation ul li:nth-child(5).active:hover~.indicator1 {
+  transform: translateX(calc(68px * 4));
+}
+
+.navigation ul li:nth-child(6).active:hover~.indicator1 {
+  transform: translateX(calc(69px * 5));
+}
+#canvas{
+  width: 160px;
+  height: 160px;
+  top: 100%;
+}

@@ -1,0 +1,20 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+body img{
+    background-size: cover;
+    background-repeat: none;
+}
+
+.rreason{
+    top: 6px;
+    float: left;
+}
+.head{
+    text-align: center;
+}
+div{
+    margin-top: 5%;
+}
