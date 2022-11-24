@@ -16,12 +16,12 @@ body {
   position: fixed;
   justify-content: center;
   align-items: center;
-  width: 1240px;
+  width: 1440px;
   height: 70px;
   background-color: rgb(230, 233, 44);
   border-radius: 10px;
-  top: 5%;
-  left: 5%;
+  top: 0%;
+  left: 0%;
   transition: 0;
 }
 
@@ -145,8 +145,8 @@ body {
 
 .navigation {
   position: fixed;
-  top: 20%;
-  Left: 20px;
+  top: 10%;
+  Left: 0px;
   bottom: 20px;
   width: 250px;
   border-radius: 10px;
@@ -154,6 +154,8 @@ body {
   border-Left: 5px solid #4d5bf9;
   background: #4d5bf9;
   transition: 0.5s;
+  height: 1000px;
+  
 }
 
 .navigation ul {
