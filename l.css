@@ -7,14 +7,14 @@ table, th, td {
     margin-left: 50px;
     margin-top: 100px;
     width: 25%;
-    
+    background-color: rgb(122, 213, 228);
 
   }
   h1{
     font-family:'Times New Roman', Times, serif;
     margin-top: 30px;
     margin-left:20px;
-    text-shadow: 8px 8px 8px  rgb(11, 38, 246);
+    text-shadow: 8px 8px 8px  rgb(93, 94, 103);
     font-size:50px;
      
   }
@@ -23,11 +23,11 @@ table, th, td {
 }
 
 html {  
-    background: url("5.jpg") no-repeat center center fixed; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    background: url("8.jpeg") no-repeat center center fixed; 
+    -webkit-background-size: auto;
+    -moz-background-size: auto;
+    -o-background-size: auto;
+    background-size: 600px 400px;
 
   }
   img{
@@ -52,7 +52,7 @@ html {
 }
 
 table { 
-  box-shadow: 16px 16px 16px rgb(11, 38, 246); 
+  box-shadow: 16px 16px 16px rgb(98, 99, 104); 
 }
 #submit{
  
