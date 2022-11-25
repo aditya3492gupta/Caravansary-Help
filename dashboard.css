@@ -16,15 +16,15 @@ body {
   position: fixed;
   justify-content: center;
   align-items: center;
-  width: 1040px;
+  width: 1440px;
   height: 70px;
   color: #fff;
   border-Left: 5px solid #4d5bf9;
   background: #4d5bf9;
   border-radius: 10px;
-  top: 5%;
-  left: 22%;
-  transition: 0.5s;
+  top: 0%;
+  left: 0%;
+  transition: 0;
 }
 
 .navigation1 ul {
@@ -123,8 +123,8 @@ body {
 
 .navigation {
   position: fixed;
-  top: 5%;
-  Left: 20px;
+  top: 10%;
+  Left: 0px;
   bottom: 20px;
   width: 250px;
   border-radius: 10px;
@@ -132,6 +132,8 @@ body {
   border-Left: 5px solid #4d5bf9;
   background: #4d5bf9;
   transition: 0.5s;
+  height: 1000px;
+  
 }
 
 .navigation ul {
