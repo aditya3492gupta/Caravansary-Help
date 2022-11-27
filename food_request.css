@@ -2,7 +2,9 @@
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
+    
 }
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
 body img{
     background-size: cover;
     background-repeat: none;
@@ -11,10 +13,39 @@ body img{
 .rreason{
     top: 6px;
     float: left;
+    width: auto;
 }
 .head{
     text-align: center;
 }
 div{
     margin-top: 5%;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Libre Baskerville', serif; 
+    /* opacity: 50%; */
+}
+.container{
+    border-style: groove;
+   box-shadow: 10px 10px 10px 5px grey;
+   border-radius: 5px;
+   margin: auto;
+   display: flex;
+}
+.size{
+    width: 480px;
+}
+.label{
+    margin: 10px 0;
+    font-family: 'Libre Baskerville', serif;
+    opacity: 100%;
+}
+.input{
+    margin: 10px 0;
+}
+.button{
+    cursor: pointer;
+    padding: 10px 10px;
+    margin: 10px 40%;
+    opacity: 100%;
 }
