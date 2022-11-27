@@ -87,9 +87,33 @@ body {
   top: -50%;
   border-radius: 50%;
   border-color: white;
-  transition: 0s;
+  transition: 0.5s;
+  border: 6px solid;
 }
-
+.indicator::before
+{
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: -22px;
+    width: 20px;
+      height: 20px;
+      background: transparent;
+      border-top-right-radius: 20px;
+      box-shadow: 0px 10px 0 0 var(--clr);
+}
+.indicator::after{
+  content:"";
+  position: absolute;
+  top: 50%;
+  left: -22px;
+  right: -22px;
+  width: 20px;
+  height: 20px;
+  background: transparent;
+  border-top-left-radius: 20px;
+  box-shadow: 1px -10px 0 0 var(--clr);
+}
 .navigation1 ul li:nth-child(1).active:hover~.indicator {
   transform: translateX(calc(60px * 0));
 }
@@ -239,6 +263,29 @@ body {
   border-color: white;
   transition: 0.5s;
 }
+.indicator1::before
+{
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: -22px;
+    width: 20px;
+      height: 20px;
+      background: transparent;
+      border-top-right-radius: 20px;
+      box-shadow: 0px 10px 0 0 var(--clr);
+}
+.indicator1::after{
+  content:"";
+  position: absolute;
+  top: 50%;
+  right: -22px;
+  width: 20px;
+  height: 20px;
+  background: transparent;
+  border-top-left-radius: 20px;
+  box-shadow: 0px -10px 0 0 var(--clr);
+}
 .navigation ul li:nth-child(1).active:hover~.indicator1 {
   transform: translateX(calc(60px * 0));
 }
@@ -261,9 +308,4 @@ body {
 
 .navigation ul li:nth-child(6).active:hover~.indicator1 {
   transform: translateX(calc(69px * 5));
-}
-#canvas{
-  width: 160px;
-  height: 160px;
-  top: 100%;
 }
