@@ -22,8 +22,8 @@ body {
   border-Left: 5px solid #4d5bf9;
   background: #4d5bf9;
   border-radius: 10px;
-  top: 0%;
-  left: 0%;
+  top: 5%;
+  left: 20%;
   transition: 0;
 }
 
@@ -123,8 +123,8 @@ body {
 
 .navigation {
   position: fixed;
-  top: 10%;
-  Left: 0px;
+  top: 1%;
+  Left: 0.1%;
   bottom: 20px;
   width: 250px;
   border-radius: 10px;
