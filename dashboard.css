@@ -21,7 +21,7 @@ body {
   position: fixed;
   top: 1%;
   Left: 0.1%;
-  bottom: 20px;
+  bottom: 5%;
   width: 250px;
   border-radius: 10px;
   box-sizing: initial;
@@ -29,7 +29,7 @@ body {
   background: #4d5bf9;
   transition: 0.5s;
   height: 1000px;
-  
+
 }
 
 .navigation ul {
@@ -38,7 +38,7 @@ body {
   Left: 0;
   width: 100%;
   padding-left: 15px;
-  padding-top: 40px;
+  padding-top: 25px;
 }
 
 .navigation ul li {
@@ -93,8 +93,8 @@ body {
 
 .heading {
   position: absolute;
-  top: 50%;
-  left: 35%;
+  top: 5%;
+  left: 30%;
   transform: translate(-50%, -50%);
 }
 
@@ -122,9 +122,11 @@ body {
   opacity: 0;
   transform: translateY(22px);
 }
+
 .navigation1 ul li.active a .text1 {
   opacity: 1;
 }
+
 .indicator1 {
   position: absolute;
   width: 70px;
@@ -135,20 +137,21 @@ body {
   border-color: white;
   transition: 0.5s;
 }
-.indicator1::before
-{
-      content: '';
-      position: absolute;
-      top: 50%;
-      left: -22px;
-    width: 20px;
-      height: 20px;
-      background: transparent;
-      border-top-right-radius: 20px;
-      box-shadow: 0px 10px 0 0 var(--clr);
+
+.indicator1::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: -22px;
+  width: 20px;
+  height: 20px;
+  background: transparent;
+  border-top-right-radius: 20px;
+  box-shadow: 0px 10px 0 0 var(--clr);
 }
-.indicator1::after{
-  content:"";
+
+.indicator1::after {
+  content: "";
   position: absolute;
   top: 50%;
   right: -22px;
@@ -158,6 +161,7 @@ body {
   border-top-left-radius: 20px;
   box-shadow: 0px -10px 0 0 var(--clr);
 }
+
 .navigation ul li:nth-child(1).active:hover~.indicator1 {
   transform: translateX(calc(60px * 0));
 }
@@ -181,18 +185,91 @@ body {
 .navigation ul li:nth-child(6).active:hover~.indicator1 {
   transform: translateX(calc(69px * 5));
 }
+
 .navigation ul li:nth-child(7).active:hover~.indicator1 {
   transform: translateX(calc(69px * 6));
 }
+
 .navigation ul li:nth-child(8).active:hover~.indicator1 {
   transform: translateX(calc(69px * 7));
 }
+
 .navigation ul li:nth-child(9).active:hover~.indicator1 {
   transform: translateX(calc(69px * 8));
 }
+
 .navigation ul li:nth-child(10).active:hover~.indicator1 {
   transform: translateX(calc(69px * 9));
 }
+
 .navigation ul li:nth-child(11).active:hover~.indicator1 {
-  transform: translateX(calc(69px * 10));
+  transform: translateX(calc(69px * 10heading));
+}
+
+.card {
+  margin: 8% 25%;
+}
+
+.card1 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  border-radius: 5px;
+  background-color: #4d5bf9;
+  color: aliceblue;
+  width: 200px;
+  height: 200px;
+
+
+}
+
+
+
+.card1:hover {
+  box-shadow: 4px 8px 16px 4px rgb(0, 0, 0);
+}
+
+.container1 {
+  padding: 2px 16px;
+}
+
+.card3 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  border-radius: 5px;
+  background-color: #4d5bf9;
+  color: aliceblue;
+  width: 200px;
+  height: 200px;
+
+
+}
+
+
+
+.card3:hover {
+  box-shadow: 4px 8px 16px 4px rgb(0, 0, 0);
+}
+
+.container3 {
+  padding: 2px 16px;
+}
+
+.card2 {
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  border-radius: 5px;
+  background-color: #4d5bf9;
+  color: aliceblue;
+  width: 200px;
+  height: 200px;
+
+
+}
+
+.card2:hover {
+  box-shadow: 4px 8px 16px 4px rgb(0, 0, 0);
+}
+
+.container2 {
+  padding: 2px 16px;
 }
