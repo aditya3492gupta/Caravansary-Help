@@ -12,135 +12,7 @@ body {
   background: rgb(252, 251, 251);
 }
 
-.navigation1 {
-  position: fixed;
-  justify-content: center;
-  align-items: center;
-  width: 1440px;
-  height: 70px;
-  color: #fff;
-  border-Left: 5px solid #4d5bf9;
-  background: #4d5bf9;
-  border-radius: 10px;
-  top: 5%;
-  left: 20%;
-  transition: 0;
-}
 
-.navigation1 ul {
-  display: flex;
-  width: 550px;
-  color: #fff;
-}
-
-.navigation1 ul li {
-  position: relative;
-  color: #fff;
-  list-style: none;
-  width: 70px;
-  height: 70px;
-  z-index: 1;
-}
-
-.navigation1 ul li a {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  width: 100%;
-  text-align: center;
-  }
-
-.navigation1 ul li a .icon1 {
-  position: relative;
-  display: block;
-  line-height: 75px;
-  font-size: 1.5em;
-  text-align: center;
-  transition: 0.5s;
-  color: #fff;
-}
-
-.navigation1 ul li.active a .icon1 {
-  transform: translateY(-32px);
-}
-
-.navigation1 ul li a .text1 {
-  position: absolute;
-  color: #fff;
-  font-size: 0.75em;
-  transition: 0.5s;
-  opacity: 0;
-  transform: translateY(20px);
-}
-
-.navigation1 ul li.active a .text1 {
-  opacity: 1;
-}
-
-.indicator {
-  position: absolute;
-  width: 70px;
-  height: 70px;
-  background-color: #4d5bf9;
-  top: -50%;
-  border-radius: 50%;
-  border-color: white;
-  transition: 0.5s;
-  border: 6px solid;
-}
-.indicator::before
-{
-      content: '';
-      position: absolute;
-      top: 50%;
-      left: -22px;
-    width: 20px;
-      height: 20px;
-      background: transparent;
-      border-top-right-radius: 20px;
-      box-shadow: 0px 10px 0 0 var(--clr);
-}
-.indicator::after{
-  content:"";
-  position: absolute;
-  top: 50%;
-  left: -22px;
-  right: -22px;
-  width: 20px;
-  height: 20px;
-  background: transparent;
-  border-top-left-radius: 20px;
-  box-shadow: 1px -10px 0 0 var(--clr);
-}
-.navigation1 ul li:nth-child(1).active:hover~.indicator {
-  transform: translateX(calc(60px * 0));
-}
-
-.navigation1 ul li:nth-child(2).active:hover~.indicator {
-  transform: translateX(calc(64px * 1));
-}
-
-.navigation1 ul li:nth-child(3).active:hover~.indicator {
-  transform: translateX(calc(67px * 2));
-}
-
-.navigation1 ul li:nth-child(4).active:hover~.indicator {
-  transform: translateX(calc(68px * 3));
-}
-
-.navigation1 ul li:nth-child(5).active:hover~.indicator {
-  transform: translateX(calc(68px * 4));
-}
-
-.navigation1 ul li:nth-child(6).active:hover~.indicator {
-  transform: translateX(calc(69px * 5));
-}
-
-.navigation1 ul li:nth-child(7).active:hover~.indicator {
-  transform: translateX(calc(69px * 6));
-}
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200; 300; 400; 500; 608; 708; 800; 900& display=swap');
 
 
@@ -308,4 +180,19 @@ body {
 
 .navigation ul li:nth-child(6).active:hover~.indicator1 {
   transform: translateX(calc(69px * 5));
+}
+.navigation ul li:nth-child(7).active:hover~.indicator1 {
+  transform: translateX(calc(69px * 6));
+}
+.navigation ul li:nth-child(8).active:hover~.indicator1 {
+  transform: translateX(calc(69px * 7));
+}
+.navigation ul li:nth-child(9).active:hover~.indicator1 {
+  transform: translateX(calc(69px * 8));
+}
+.navigation ul li:nth-child(10).active:hover~.indicator1 {
+  transform: translateX(calc(69px * 9));
+}
+.navigation ul li:nth-child(11).active:hover~.indicator1 {
+  transform: translateX(calc(69px * 10));
 }
