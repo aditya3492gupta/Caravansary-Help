@@ -215,13 +215,13 @@ body {
 
   width: 40%;
 
-  padding: 5px 20px;
+  padding: 5px 10px;
 
 }
 
 /* Remove extra left and right margins, due to padding */
 .row {
-  margin: 0 -5px;
+  margin: -5px -5px;
 }
 
 /* Clear floats after the columns */
@@ -234,10 +234,10 @@ body {
 /* Responsive columns */
 @media screen and (max-width: 100%) {
   .column {
-    width: 100%;
+    width: 100px;
     display: flex;
     flex: auto;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
 }
 
