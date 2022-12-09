@@ -212,45 +212,64 @@ body {
 }
 
 .column {
+  float: left;
+  width: 25%;
 
-  width: 40%;
-
-  padding: 5px 10px;
+  padding: 0px 5px;
 
 }
 
 /* Remove extra left and right margins, due to padding */
 .row {
-  margin: -5px -5px;
+  margin: 0px -5px;
 }
 
 /* Clear floats after the columns */
 .row:after {
   content: "";
-  display: table;
-  clear: both;
+  display: flex;
 }
 
 /* Responsive columns */
-@media screen and (max-width: 100%) {
+@media screen and (max-width: 400px) {
   .column {
-    width: 100px;
-    display: flex;
-    flex: auto;
-    margin-bottom: 10px;
+
+    display: block;
   }
+}
+
+.col-10 {
+  width: 120%;
 }
 
 /* Style the counter cards */
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   padding: 16px;
-  width: 200px;
-  height: 200px;
+  margin: 10px;
+  float: left;
+  width: 180px;
+  height: 180px;
   text-align: center;
   background-color: #4d5bf9;
   color: #fff;
   transition: 0.3s;
+
+}
+
+.card1 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 16px 10px;
+  margin: 10px 10px;
+  float: left;
+  width: 250px;
+  height: 180px;
+  text-align: center;
+  background-color: #4d5bf9;
+  color: #fff;
+  transition: 0.3s;
+
 }
 
 .card:hover {
