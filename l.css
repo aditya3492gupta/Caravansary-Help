@@ -58,4 +58,12 @@ table {
  
   margin-left:280px ;
   background-color: rgba(15, 130, 179, 0.929);
+  padding: 13px 0;
+  cursor: pointer;
+  font-size: medium;
+  border-radius: 5px;
+  box-shadow: 16px 16px 16px rgb(98, 99, 104);
+}
+.total{
+  cursor: pointer;
 }
