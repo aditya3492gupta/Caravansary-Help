@@ -12,76 +12,13 @@
 </head>
 
 <body>
-    <div>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
-        <link rel="stylesheet" href="nav.css">
-        <div class="navigation1">
-            <ul>
-                <li class="list1 active">
-                    <a href="#">
-                        <span class="icon1">
-                            <ion-icon name="grid-outline"></ion-icon>
-                        </span>
-                        <span class="text1">Dashboard</span>
-                    </a>
-                </li>
-                <li class="list1">
-                    <a href="http://127.0.0.1:5501/home.html">
-                        <span class="icon1">
-                            <ion-icon name="home-outline"></ion-icon>
-                        </span>
-                        <span class="text1">Home</span>
-                    </a>
-                </li>
-                <li class="list1">
-                    <a href="#">
-                        <span class="icon1">
-                            <ion-icon name="fast-food-outline"></ion-icon>
-                        </span>
-                        <span class="text1">Food Request</span>
-                    </a>
-                </li>
-                <li class="list1">
-                    <a href="#">
-                        <span class="icon1">
-                            <ion-icon name="call-outline"></ion-icon>
-                        </span>
-                        <span class="text1">Contact Us</span>
-                    </a>
-                </li>
-                <li class="list1">
-                    <a href="#">
-                        <span class="icon1">
-                            <ion-icon name="people-circle-outline"></ion-icon>
-                        </span>
-                        <span class="text1">About Us</span>
-                    </a>
-                </li>
-                <li class="list1">
-                    <a href="#">
-                        <span class="icon1">
-                            <ion-icon name="newspaper-outline"></ion-icon>
-                        </span>
-                        <span class="text1">Newsletter</span>
-                    </a>
-                </li>
-                <li class="list1">
-                    <a href="#">
-                        <span class="icon1">
-                            <ion-icon name="power-outline"></ion-icon>
-                        </span>
-                        <span class="text1">Logout</span>
-                    </a>
-                </li>
-                <div class="indicator"></div>
-            </ul>
-        </div>
 
-    </div>
-    <div class="navigation">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+
+    <div class="navigation col-2">
         <ul>
             <li class="list active">
-                <a href="#">
+                <a href="http://127.0.0.1:5501/dashboard.html">
                     <span class="icon">
                         <ion-icon name="pin-outline"></ion-icon>
                     </span>
@@ -105,11 +42,19 @@
                 </a>
             </li>
             <li class="list">
+                <a href="http://127.0.0.1:5501/home.html">
+                    <span class="icon">
+                        <ion-icon name="home-outline"></ion-icon>
+                    </span>
+                    <span class="title">Home</span>
+                </a>
+            </li>
+            <li class="list">
                 <a href="http://127.0.0.1:5501/laundary%20page.html">
                     <span class="icon">
                         <ion-icon name="shirt-outline"></ion-icon>
                     </span>
-                    <span class="title">Laundary</span>
+                    <span class="title">Laundry</span>
                 </a>
             </li>
             <li class="list">
@@ -121,7 +66,7 @@
                 </a>
             </li>
             <li class="list">
-                <a href="#">
+                <a href="http://127.0.0.1:5501/services.html">
                     <span class="icon">
                         <ion-icon name="bed-outline"></ion-icon>
                     </span>
@@ -136,19 +81,109 @@
                     <span class="title">Notice</span>
                 </a>
             </li>
+            <li class="list">
+                <a href="http://127.0.0.1:5501/food_request.html">
+                    <span class="icon">
+                        <ion-icon name="fast-food-outline"></ion-icon>
+                    </span>
+                    <span class="title">Food Request</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="http://127.0.0.1:5501/contact_us.html">
+                    <span class="icon">
+                        <ion-icon name="call-outline"></ion-icon>
+                    </span>
+                    <span class="title">Contact Us</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="#">
+                    <span class="icon">
+                        <ion-icon name="power-outline"></ion-icon>
+                    </span>
+                    <span class="title">Logout</span>
+                </a>
+            </li>
             <div class="indicator1"></div>
         </ul>
     </div>
-    <script src="nav.js"></script>
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <div class="heading">
         <u class="dash">Dashboard</u><br>
-        <img src="logo.png" alt="logo" class="user"> <br>
-        <a href="#" style="font-size: 25px;">&nbspUser Profile</a><br>
-        
     </div>
+    <div class="carding">
+        <div class="row col-10">
+            <div class="column">
+                <div class="card">
+                    <h3>Total Beds</h3><br>
+                    <h4>1000</h4>
 
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="card">
+                    <h3>Occupied Beds</h3>
+                    <h4>680</h4>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="card">
+                    <h3>Vacant Beds</h3>
+                    <h4>320</h4>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="card">
+                    <h3>Card 4</h3>
+                    <p>Some text</p>
+                    <p>Some text</p>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <h3>Card 4</h3>
+                    <p>Some text</p>
+                    <p>Some text</p>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="card">
+                    <h3>Card 4</h3>
+                    <p>Some text</p>
+                    <p>Some text</p>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <h3>Card 4</h3>
+                    <p>Some text</p>
+                    <p>Some text</p>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <h3>Card 4</h3>
+                    <p>Some text</p>
+                    <p>Some text</p>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card1">
+                    <h3>Card 4</h3>
+                    <p>Some text</p>
+                    <p>Some text</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script src="dashboard.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
