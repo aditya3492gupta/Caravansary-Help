@@ -79,7 +79,14 @@ h1 {
 }
 
 .help {
-        font-size: 10px;
+        display: flex;
+        justify-content: center;
+}
+
+.help ul {
+        font-size: 15px;
+        list-style: none;
+        display: flex;
 }
 
 a:visited {
