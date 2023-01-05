@@ -95,8 +95,10 @@ body {
   position: absolute;
   top: 5%;
   left: 30%;
-  transform: translate(-50%, -50%);
+}
 
+.heading h1 {
+  text-align: center;
 }
 
 .dash {
