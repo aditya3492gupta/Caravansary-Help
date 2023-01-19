@@ -5,7 +5,7 @@
 }
 
 body {
-        background: url('1.jpg') no-repeat;
+        background: url('/Assets/1.jpg') no-repeat;
         background-size: cover;
         width: 100%;
         height: auto;
