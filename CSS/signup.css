@@ -86,3 +86,16 @@ h1 {
 /* .help {
     color: #fff;
 } */
+.option ul {
+    justify-content: center;
+    display: flex;
+}
+
+.option ul li {
+    list-style: none;
+    padding: 0 5px;
+}
+
+.option ul li a {
+    text-decoration: none;
+}

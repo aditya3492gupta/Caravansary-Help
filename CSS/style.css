@@ -92,3 +92,7 @@ h1 {
 a:visited {
         color: #fff;
 }
+
+.help ul li a {
+        text-decoration: none;
+}
