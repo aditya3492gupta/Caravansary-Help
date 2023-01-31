@@ -20,7 +20,7 @@ body {
 .navigation {
   position: fixed;
   top: 1%;
-  Left: 0.1%;
+  Left: 0.2%;
   bottom: 5%;
   width: 250px;
   border-radius: 10px;
@@ -95,8 +95,10 @@ body {
   position: absolute;
   top: 5%;
   left: 30%;
-  transform: translate(-50%, -50%);
+}
 
+.heading h1 {
+  text-align: center;
 }
 
 .dash {

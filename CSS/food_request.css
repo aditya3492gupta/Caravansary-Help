@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+}
+
+h1 {
+    text-align: center;
+    margin: 40px 0;
+    color: #fff;
+}
+
+.request {
+    width: 400px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    color: #fff;
+}
+
+.request p {
+    font-size: 20px;
+    margin: 15px 0;
+}
+
+.request input {
+    font-size: 16px;
+    width: 100%;
+    padding: 15px 10px;
+    border: 0;
+    outline: none;
+    border-radius: 5px;
+}
+
+.request select {
+    border: 0;
+    outline: 0;
+    padding: 15px 10px;
+    border-radius: 5px;
+}
+
+.same {
+    list-style: none;
+    display: flex;
+    padding: 5px;
+}
+
+.same>li {
+    padding: 0 5px;
+}
+
+textarea {
+    padding: 10px 20px;
+}
+
+textarea::placeholder {
+    font-size: 15px;
+    color: black;
+}

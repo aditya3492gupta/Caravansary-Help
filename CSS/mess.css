@@ -1,0 +1,38 @@
+html {
+  background: url(2.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.heading {
+  text-align: center;
+  font-weight: 900;
+  font-size: x-large;
+  text-decoration: underline solid rgb(12, 12, 12) 8%;
+
+}
+
+table,
+th,
+td {
+  border: 1.5px solid black;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+.menu tr,
+.menu th,
+.menu td {
+  border: 1.5px solid black;
+  /* border-collapse: collapse; */
+}
+
+table.menu {
+  text-transform: uppercase;
+}
+
+summary {
+  cursor: auto;
+}

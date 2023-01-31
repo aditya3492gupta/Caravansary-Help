@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/CSS/food_request.css">
+  <title>Food Request Form</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Food Request Form</h1>
+    <form class="request">
+      <p>Name</p>
+      <input type="text" name="name" placeholder="Name">
+      <ul class="same">
+        <li style="padding-left: 0;">
+          <p>Day</p>
+          <select name="day" id="day">
+            <option value="select">---Select Option---</option>
+            <option value="mon">Monday</option>
+            <option value="tues">Tuesday</option>
+            <option value="wed">Wednesday</option>
+            <option value="thur">Thursday</option>
+            <option value="fri">Friday</option>
+            <option value="sat">Saturday</option>
+            <option value="sun">Sunday</option>
+          </select>
+        </li>
+        <li>
+          <p>Date</p>
+          <input type="date" name="date" placeholder="Date" style="padding: 13px 10px;">
+        </li>
+      </ul>
+      <p>Time</p>
+      <select name="time" id="time">
+        <option value="select">---Select Option---</option>
+        <option value="break">Breakfast</option>
+        <option value="lunch">Lunch</option>
+        <option value="snack">Snack</option>
+        <option value="dinner">Dinner</option>
+      </select>
+      <p>Reason</p>
+      <textarea name="reason" id="reason" cols="55" rows="10" placeholder="Type Reason"
+        style="border-radius: 5px;"></textarea>
+    </form>
+  </div>
+</body>
+</html>
