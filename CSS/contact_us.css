@@ -10,7 +10,7 @@ section {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-color: #4d5bf9;
+    background-color: rgb(127, 105, 252);
 
 }
 
@@ -21,7 +21,7 @@ section::before {
     left: 0;
     width: 50%;
     height: 100%;
-    background: #fff38e;
+    background:  #ffa78e;
 }
 
 .container {
@@ -40,7 +40,7 @@ section::before {
     top: 40px;
     width: 350px;
     height: calc(100% - 80px);
-    background: #4d5bf9;
+    background: rgb(120, 122, 247);
     z-index: 1;
     padding: 40px;
     display: flex;
@@ -132,7 +132,7 @@ section::before {
 }
 
 .container .contactForm h2 {
-    color: #4d5bf9;
+    color: rgb(120, 122, 247);
     font-size: 24px;
     font-weight: 500;
 }
@@ -193,7 +193,7 @@ section::before {
     font-size: 12px;
     font-weight: 400;
     letter-spacing: 1px;
-    color: #4d5bf9;
+    color:  rgb(120, 122, 247);
     font-weight: 500;
 }
 
@@ -201,7 +201,7 @@ section::before {
 .container .contactForm .formBox .inputBox input[type="submit"] {
     position: relative;
     cursor: pointer;
-    background: #4d5bf9;
+    background: rgb(120, 122, 247);
     border-radius: 20px;
     color: #fff;
     border: none;
@@ -211,8 +211,8 @@ section::before {
 }
 
 .container .contactForm .formBox .inputBox input[type="submit"]:hover {
-    background-color: #fff38e;
-    color: #4d5bf9;
+    background-color: #ffa78e;
+    color: rgb(120, 122, 247);
 }
 
 .sci li a {
@@ -227,7 +227,7 @@ section::before {
         width: 90%;
         min-width: auto;
         margin: 20px;
-        box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+        box-shadow: 0 20px 50px rgba(122, 70, 70, 0.2);
     }
 
     .container .contactInfo {
@@ -256,7 +256,7 @@ section::before {
         justify-content: center;
         align-items: center;
         min-height: 100vh;
-        background: #fff38e;
+        background:  #ffa78e;
     }
 
     section::before {
