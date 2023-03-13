@@ -1,0 +1,44 @@
+{%load static%}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Form</title>
+    
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body style="background-image: url({% static '1.jpg' %});">
+    <div class="login-form">
+        <h1>Login </h1>
+        <form method="POST" action="/logins">
+            {% csrf_token %}
+            <p>User Name</p>
+            <input type="text" for="input_user" id="input_user" name="username" placeholder="UserName">
+            <p>Password</p>
+            <input type="password" id="inputpassword" name="password" placeholder="Password">
+            <div class="check">
+                <ul>
+
+                    <li><input type="checkbox" onclick="myFunction()"></li>
+                    <li><label for="checkbox">Show Password</label></li>
+                </ul>
+            </div>
+            <button type="submit" class="btn">Submit</button>
+        </form>
+        <div class="help">
+            <ul>
+                <li><a
+                        href="mailto:aditya.21b1541020@abes.ac.in;aryan.21b1541007@abes.ac.in;ayush.21b1541097@abes.ac.in">Need
+                        Help?</a>
+                </li>
+                {% comment %} <li style="padding-left: 30px;">
+                    <a href="http://127.0.0.1:5501/HTML/singnup.html">Create Account</a>
+                </li> {% endcomment %}
+
+            </ul>
+
+        </div>
+    </div>
+    <!-- <script src="/JavaScript/login.js"></script> -->
+    <script src="{% static 'login1.js' %}"></script>
+</body>
+</html>

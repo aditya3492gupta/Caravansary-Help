@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<!--=== Coding by CodingLab | www.codinglabweb.com === -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!--===== Iconscout CSS ===== -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    {% comment %}
+    <link rel="stylesheet" href="userstyle.css"> {% endcomment %}
+
+    <title>Admin Dashboard Panel</title>
+    {%load static%}
+    <link rel="stylesheet" href="{% static 'dashboard1.css' %}">
+    <link rel="stylesheet" href="{% static 'userstyle.css' %}">
+    <script src="{% static 'dashboard2.js' %}"></script>
+</head>
+<body>
+    <nav>
+        <div class="logo-name">
+            <div class="logo-image">
+                <img src="{% static 'cl.png' %}" alt="">
+            </div>
+
+            <span class="logo_name">Caravansary Help</span>
+        </div>
+
+        <div class="menu-items">
+            <ul class="nav-links">
+                <li>
+                    <a href="/">
+                        <i class="fa-solid fa-map-pin"></i>
+                        <span class="link-name">Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa-solid fa-user"></i>
+                        <span class="link-name">Profile</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa-solid fa-clipboard"></i>
+                        <span class="link-name">Attendance</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/laundary_page">
+                        <i class="fa-solid fa-shirt"></i>
+                        <span class="link-name">Laundary</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/mess">
+                        <i class="fa-solid fa-utensils"></i>
+                        <span class="link-name">Mess</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/food_request">
+                        <i class="fa-solid fa-utensils"></i>
+                        <span class="link-name">Food Request</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/services">
+                        <i class="fa-solid fa-house"></i>
+                        <span class="link-name">Room</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa-sharp fa-solid fa-message"></i>
+                        <span class="link-name">Notice</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/contact_us">
+                        <i class="fa-solid fa-phone"></i>
+                        <span class="link-name">Contact</span>
+                    </a>
+                </li>
+            </ul>
+
+            <ul class="logout-mode">
+                <li>
+                    <a href="/logout">
+                        <i class="uil uil-signout"></i>
+                        <span class="link-name">Logout</span>
+                    </a>
+                </li>
+
+                <li class="mode">
+                    <a href="#">
+                        <i class="uil uil-moon"></i>
+                        <span class="link-name">Dark Mode</span>
+                    </a>
+
+                    <div class="mode-toggle">
+                        <span class="switch"></span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="dashboard">
+        <div class="top">
+            <i class="uil uil-bars sidebar-toggle"></i>
+
+            <div class="search-box">
+                <i class="uil uil-search"></i>
+                <input type="text" placeholder="Search here..." />
+            </div>
+            <div class="action">
+                <div class="profile" onclick="menuToggle();">
+                    <img src="{% static 'profile.jpg' %}" alt="">
+                </div>
+
+                <div class="menu">
+                    <h3>
+                        User Account
+                    </h3>
+                    <ul>
+                        <li>
+                            <a href="#">My Profile</a>
+                        </li>
+                        <li>
+                            <a href="#">Edit Account</a>
+                        </li>
+                        <li>
+                            <a href="/home">Photos</a>
+                        </li>
+                        <li>
+                            <a href="/leave">Leave Form</a>
+                        </li>
+                        <li>
+                            <a href="/logout">Logout</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="dash-content">
+            <div class="overview">
+                <div class="title">
+                    <i class="uil uil-tachometer-fast-alt"></i>
+                    <span class="text">Dashboard</span>
+                </div>
+
+                <div class="boxes">
+                    <div class="box box1">
+                        <i class="fa-solid fa-user"></i>
+                        <span class="text">{{request.user}}</span>
+                        <!-- <span class="number">50,120</span> -->
+                    </div>
+                    <div class="box box2">
+                        <i class="fa-solid fa-phone"></i>
+                        <span class="text">Connect</span>
+
+                    </div>
+                    <div class="box box3">
+                        <i class="fa-solid fa-bowl-food"></i>
+                        <span id="popup-button" class="text">Today Menu</span>
+                        <!-- <button id="popup-button">Open Pop-up</button> -->
+                        <div id="popup-box">
+                            <h2>Pop-up Box</h2>
+                            <p>This is a simple pop-up box.</p>
+                            <button id="close-button">Close</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+    <script>
+        function menuToggle() {
+            const toggleMenu = document.querySelector('.menu');
+            toggleMenu.classList.toggle('active')
+        }
+
+
+
+    </script>
+    {% comment %}
+    <script src="script.js"></script> {% endcomment %}
+
+</body>
+</html>

@@ -1,0 +1,79 @@
+table,
+th,
+td {
+  border: 2px solid;
+  border-color: black;
+  border-collapse: collapse;
+  padding: 2px;
+  text-align: justify;
+  margin-left: 50px;
+  margin-top: 100px;
+  width: 25%;
+  background-color: rgb(122, 213, 228);
+
+}
+
+h1 {
+  font-family: 'Times New Roman', Times, serif;
+  margin-top: 30px;
+  margin-left: 20px;
+  text-shadow: 8px 8px 8px rgb(93, 94, 103);
+  font-size: 50px;
+
+}
+
+td {
+  height: 30%;
+}
+
+html {
+  /* background: url("c.jpg") no-repeat center center fixed; */
+  -webkit-background-size: auto;
+  -moz-background-size: auto;
+  -o-background-size: auto;
+  background-size: 600px 400px;
+
+}
+
+img {
+  opacity: 0.5;
+}
+
+input {
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: groove;
+  background: transparent;
+  width: 140px;
+}
+
+.table td {
+  position: sticky;
+  top: 0;
+}
+
+.table th,
+.table td {
+  padding: 0.2rem 0.5rem;
+  text-align: center;
+}
+
+table {
+  box-shadow: 16px 16px 16px rgb(98, 99, 104);
+}
+
+#submit {
+
+  margin-left: 280px;
+  background-color: rgba(15, 130, 179, 0.929);
+  padding: 13px 0;
+  cursor: pointer;
+  font-size: medium;
+  border-radius: 5px;
+  box-shadow: 16px 16px 16px rgb(98, 99, 104);
+}
+
+.total {
+  cursor: pointer;
+}
