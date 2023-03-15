@@ -26,14 +26,7 @@ td {
   height: 30%;
 }
 
-html {
-  /* background: url("c.jpg") no-repeat center center fixed; */
-  -webkit-background-size: auto;
-  -moz-background-size: auto;
-  -o-background-size: auto;
-  background-size: 600px 400px;
 
-}
 
 img {
   opacity: 0.5;
