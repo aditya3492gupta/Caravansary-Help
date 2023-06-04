@@ -81,7 +81,7 @@ input {
 }
 
 table {
-  background: rgb(183, 174, 200);
+  /* background: rgb(183, 174, 200); */
   background: linear-gradient(135deg, rgba(183, 174, 200, 1) 0%, rgba(91, 59, 152, 1) 100%);
 }
 
