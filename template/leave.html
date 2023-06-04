@@ -17,96 +17,98 @@
         <div class="flex flex-wrap -m-2">
           <div class="p-2 w-1/2">
             <div class="relative">
-              <label for="name" class="leading-7 text-sm text-gray-600">Name</label>
-              <input type="text" id="name" name="name"
+              <form class="request" method="POST" action="\leave">
+                {%csrf_token%}
+                <label for="name" class="leading-7 text-sm text-gray-600">Name</label>
+                <input type="text" id="name" name="name"
+                  class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+            </div>
+          </div>
+          <div class="p-2 w-1/2">
+            <div class="relative">
+              <label for="admn" class="leading-7 text-sm text-gray-600">Admission No.</label>
+              <input type="text" id="admn" name="admn"
                 class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
             </div>
           </div>
           <div class="p-2 w-1/2">
             <div class="relative">
-              <label for="name" class="leading-7 text-sm text-gray-600">Admission No.</label>
-              <input type="text" id="name" name="name"
+              <label for="phone" class="leading-7 text-sm text-gray-600">Phone No.</label>
+              <input type="text" id="phone" name="phone"
                 class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
             </div>
           </div>
           <div class="p-2 w-1/2">
             <div class="relative">
-              <label for="name" class="leading-7 text-sm text-gray-600">Phone No.</label>
-              <input type="text" id="name" name="name"
+              <label for="room" class="leading-7 text-sm text-gray-600">Room No. Along With Block</label>
+              <input type="text" id="room" name="room"
                 class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
             </div>
           </div>
           <div class="p-2 w-1/2">
             <div class="relative">
-              <label for="name" class="leading-7 text-sm text-gray-600">Room No. Along With Block</label>
-              <input type="text" id="name" name="name"
+              <label for="date" class="leading-7 text-sm text-gray-600">Day And Date of Leaving</label>
+              <input type="text" id="date" name="date"
                 class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
             </div>
           </div>
           <div class="p-2 w-1/2">
             <div class="relative">
-              <label for="name" class="leading-7 text-sm text-gray-600">Day And Date of Leaving</label>
-              <input type="text" id="name" name="name"
+              <label for="time" class="leading-7 text-sm text-gray-600">Time</label>
+              <input type="text" id="time" name="time"
                 class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
             </div>
           </div>
           <div class="p-2 w-1/2">
             <div class="relative">
-              <label for="name" class="leading-7 text-sm text-gray-600">Time</label>
-              <input type="text" id="name" name="name"
+              <label for="reason" class="leading-7 text-sm text-gray-600">Reason of Leaving</label>
+              <input type="text" id="reason" name="reason"
                 class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
             </div>
           </div>
           <div class="p-2 w-1/2">
             <div class="relative">
-              <label for="email" class="leading-7 text-sm text-gray-600">Reason of Leaving</label>
-              <input type="email" id="email" name="email"
+              <label for="relate" class="leading-7 text-sm text-gray-600">Recipient's Relation</label>
+              <input type="text" id="relate" name="relate"
                 class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
             </div>
           </div>
           <div class="p-2 w-1/2">
             <div class="relative">
-              <label for="name" class="leading-7 text-sm text-gray-600">Recipient's Relation</label>
-              <input type="text" id="name" name="name"
+              <label for="rphone" class="leading-7 text-sm text-gray-600">Recipient's Phone No. </label>
+              <input type="text" id="rphone" name="rphone"
                 class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
             </div>
           </div>
           <div class="p-2 w-1/2">
             <div class="relative">
-              <label for="name" class="leading-7 text-sm text-gray-600">Recipient's Phone No. </label>
-              <input type="text" id="name" name="name"
+              <label for="add" class="leading-7 text-sm text-gray-600">Reciepient's Full Address</label>
+              <input type="text" id="add" name="add"
                 class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
             </div>
           </div>
-          <div class="p-2 w-1/2">
-            <div class="relative">
-              <label for="name" class="leading-7 text-sm text-gray-600">Reciepient's Full Address</label>
-              <input type="text" id="name" name="name"
-                class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
-            </div>
-          </div>
-
           <div class="p-2 w-full">
             <div class="relative">
-              <label for="message" class="leading-7 text-sm text-gray-600">Any Additional Information?</label>
-              <textarea id="message" name="message"
+              <label for="info" class="leading-7 text-sm text-gray-600">Any Additional Information?</label>
+              <textarea id="info" name="info"
                 class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
             </div>
           </div>
-          <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Details Regarding Your Reporting back to the Hostel</p>
+          <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Details Regarding Your Reporting back to the Hostel
+          </p>
           <div class="p-2 w-full"><br><br>
             <div class="flex flex-wrap -m-2">
               <div class="p-2 w-1/2">
                 <div class="relative">
-                  <label for="name" class="leading-7 text-sm text-gray-600">Reporting Date</label>
-                  <input type="text" id="name" name="name"
+                  <label for="rdate" class="leading-7 text-sm text-gray-600">Reporting Date</label>
+                  <input type="text" id="rdate" name="rdate"
                     class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
                 </div>
               </div>
               <div class="p-2 w-1/2">
                 <div class="relative">
-                  <label for="name" class="leading-7 text-sm text-gray-600">Reporting Time</label>
-                  <input type="text" id="name" name="name"
+                  <label for="rtime" class="leading-7 text-sm text-gray-600">Reporting Time</label>
+                  <input type="text" id="rtime" name="rtime"
                     class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
                 </div>
               </div>
@@ -116,6 +118,7 @@
 
             <button
               class="flex mx-auto text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">Submit</button>
+            </form>
           </div>
           <div class="p-2 w-full pt-8 mt-8 border-t border-gray-200 text-center">
             <a class="text-indigo-500"

@@ -18,7 +18,8 @@
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap');
     </style>
-    {% comment %} <link rel="stylesheet" href="/CSS/contact_us.css"> {% endcomment %}
+    {% comment %}
+    <link rel="stylesheet" href="/CSS/contact_us.css"> {% endcomment %}
     <link rel="stylesheet" href="{% static 'contact_us.css' %}">
 </head>
 <body>
@@ -70,31 +71,34 @@
             </div>
             <div class="contactForm">
                 <h2>Send a Message</h2>
-                <div class="formBox">
-                    <div class="inputBox w50">
-                        <input type="text" name="" required>
-                        <span>First Name</span>
+                <form class="request" method="POST" action="\contact_us">
+                    {%csrf_token%}
+                    <div class="formBox">
+                        <div class="inputBox w50">
+                            <input type="text" name="fname" id="fname" required>
+                            <span>First Name</span>
+                        </div>
+                        <div class="inputBox w50">
+                            <input type="text" name="lname" id="lname" required>
+                            <span>Last Name</span>
+                        </div>
+                        <div class="inputBox w50">
+                            <input type="email" name="email" id="email" required>
+                            <span>Email Address</span>
+                        </div>
+                        <div class="inputBox w50">
+                            <input type="text" name="phone" id="phone" required>
+                            <span>Mobile Number</span>
+                        </div>
+                        <div class="inputBox w100">
+                            <textarea name="message" id="message" required></textarea>
+                            <span>Write your message here...</span>
+                        </div>
+                        <div class="inputBox w100">
+                            <input type="submit" value="Send">
+                        </div>
                     </div>
-                    <div class="inputBox w50">
-                        <input type="text" required>
-                        <span>Last Name</span>
-                    </div>
-                    <div class="inputBox w50">
-                        <input type="email" required>
-                        <span>Email Address</span>
-                    </div>
-                    <div class="inputBox w50">
-                        <input type="text" required>
-                        <span>Mobile Number</span>
-                    </div>
-                    <div class="inputBox w100">
-                        <textarea required></textarea>
-                        <span>Write your message here...</span>
-                    </div>
-                    <div class="inputBox w100">
-                        <input type="submit" value="Send">
-                    </div>
-                </div>
+                </form>
             </div>
 
 

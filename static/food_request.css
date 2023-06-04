@@ -1,15 +1,15 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-    background-color: black;
+    background-image: url('fr1.jpg');
+    background-size: cover;
 }
 
-h1 {
-    text-align: center;
-    margin: 40px 0;
+.head h1 {
     color: #fff;
 }
 

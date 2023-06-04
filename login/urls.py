@@ -14,5 +14,5 @@ urlpatterns = [
     path('photos', views.photos, name="photos"),
     path('services', views.services, name="services"),
     # path('contact_enq', views.contact_enq, name="contact_enq"),
-    path('food_enq', views.food_enq, name="food_enq"),
+    # path('food_enq', views.food_enq, name="food_enq"),
 ] 

@@ -1,0 +1,93 @@
+table,
+
+th,
+
+
+td {
+  border: 2px solid;
+  border-color: black;
+  border-collapse: collapse;
+  padding: 2px;
+  text-align: justify;
+  margin-left: 448px;
+  margin-top: 68px;
+  width: 25%;
+  /* background-color: rgb(122, 213, 228); */
+
+}
+
+h1 {
+  font-family: serif;
+  margin-top: 30px;
+  margin-left: 540px;
+  /* text-shadow: 8px 8px 8px rgb(93, 94, 103); */
+  font-size: 50px;
+
+}
+
+td {
+  height: 30%;
+}
+
+
+
+img {
+  opacity: 0.5;
+}
+
+input {
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: groove;
+  background: transparent;
+  width: 140px;
+}
+
+.table td {
+  position: sticky;
+  top: 0;
+  border-radius: 7%;
+}
+
+.table th,
+.table td {
+  padding: 0.2rem 0.5rem;
+  text-align: center;
+}
+
+/* table {
+  box-shadow: 16px 16px 16px rgb(98, 99, 104);
+} */
+.btn {
+  background-color: rgba(109, 79, 145, 0.929);
+  cursor: pointer;
+  font-size: medium;
+}
+
+#submit {
+  /* display: flex; */
+  margin-left: 667px;
+  background-color: rgba(109, 79, 145, 0.929);
+  padding: 13px 0;
+  cursor: pointer;
+  font-size: medium;
+  border-radius: 50px;
+  /* box-shadow: 16px 16px 16px rgb(98, 99, 104); */
+}
+
+.total {
+  cursor: pointer;
+}
+
+table {
+  background: rgb(183, 174, 200);
+  background: linear-gradient(135deg, rgba(183, 174, 200, 1) 0%, rgba(91, 59, 152, 1) 100%);
+}
+
+body {
+  background-image: url('bg2.jpg');
+  background-size: cover;
+  height: 400px;
+  width: 720px;
+}
