@@ -3,20 +3,11 @@ __pycache__/
 *.pyc
 *.pyo
 *.pyd
-*.env
-*.venv
+
 
 # Django-specific
 db.sqlite3
-media/
-
-# Environment variables
-.env
 
 # IDE/editor files
 .vscode/
-.idea/
 
-# OS-generated files
-.DS_Store
-Thumbs.db

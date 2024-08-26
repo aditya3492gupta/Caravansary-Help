@@ -1,1 +1,7 @@
 pip install django
+tzdata==2023.3
+sqlparse==0.4.4
+six==1.16.0
+python-dateutil==2.8.2
+asgiref==3.8.1
+Django==5.1
