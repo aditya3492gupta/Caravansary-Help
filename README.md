@@ -30,7 +30,7 @@ pip install -r requirements.txt
 ```
 
 4. Run Django Server
-    4.1. Migrate the Database
+   4.1. Migrate the Database
     ```
     python manage.py migrate
     ```
