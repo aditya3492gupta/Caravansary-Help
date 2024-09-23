@@ -11,3 +11,7 @@ db.sqlite3
 # IDE/editor files
 .vscode/
 
+echo "__pycache__/" >> .gitignore
+echo "db.sqlite3" >> .gitignore
+
+
